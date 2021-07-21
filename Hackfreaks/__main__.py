@@ -51,25 +51,17 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am a Pro group management bot, with some Special features.
- 
-Hosted in Heroku with SQLALCHEMY_DATABASE_URI Database,
-I Can make your group management fun and easy!
-Press or type /help to Get to know about my Modules
-==========================
-✗ [Updates Channel](t.me/sarthak_updates).
-✗ [Support Group](t.me/sarthak_support).
+ Hey there! My name is EVA - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-Wanna Add me to your Group? Just click the button below!
+Join my [news channel](https://t.me/Zabotz) to get information on all the latest updates. 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Join My Channel", url="https://t.me/sarthak_network"
+            text="Join My Channel", url="https://t.me/Zabotz"
         ),
-        InlineKeyboardButton(text="Add Me to a group âž•", url="https://t.me/sarthakmanager_bot?startgroup=true"),
+        InlineKeyboardButton(text="Add Me to your group", url="https://t.me/misseva_robot?startgroup=true"),
     ]
 ]
 
@@ -79,12 +71,12 @@ Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
- ✗ /help: PM's you this message. 
- ✗ /help <module name>: PM's you info about that module.
- ✗ /donate: information on how to donate!
- ✗ /settings:
-   ✗ in PM: will send you your settings for all supported modules.
-   ✗ in a group: will redirect you to pm, with all that chat's settings.
+/help: PM's you this message. 
+/help <module name>: PM's you info about that module.
+/donate: information on how to donate!
+/settings:
+  in PM: will send you your settings for all supported modules.
+  in a group: will redirect you to pm, with all that chat's settings.
 
 
 {}
@@ -93,11 +85,11 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-HACKFREAKS_IMG = "telegra.ph/file/169458ba6242250b6d280.jpg"
+HACKFREAKS_IMG = "https://telegra.ph/file/6c15ac238c884c086ac12.jpg"
 
-DONATE_STRING = """Hope You are Satisfied with Me. As of now I don't need any Donations
+DONATE_STRING = """[Hope You are Satisfied with Me. As of now I don't need any Donations
 Since I am Hosted in Heroku with a Cheap Database add-on. If I need Some After Growing and Upgrading to a Faster and Advanced Hosting,
-I will update this String."""
+I will update this String.](https://t.me/Zeus_Of_TG)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -195,21 +187,21 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(                   
                           [[
                               InlineKeyboardButton(
-                              text="🔥Add Sarthak Manager Bot To Your Group🔥",
+                              text="Add Me To Your Group",
                               url="t.me/{}?startgroup=true".format(
                                   context.bot.username))
                           ], [
                               InlineKeyboardButton(
                               text="Join My Channel", 
-                              url="https://t.me/sarthak_network"
+                              url="https://t.me/Zabotz"
         )],
                           [
                               InlineKeyboardButton(
-                              text="🍁Support Group🍁",
-                              url=f"https://t.me/sarthak_support"),
+                              text="Support Group",
+                              url=f"https://t.me/Zabotzsupport"),
                               InlineKeyboardButton(
-                              text="✨Updates Channel✨",
-                              url="https://t.me/sarthak_updates")
+                              text="Updates Channel",
+                              url="https://t.me/Zabotz")
                           ]])) 
     else:
         update.effective_message.reply_text(
