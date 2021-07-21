@@ -85,7 +85,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-HACKFREAKS_IMG = "https://telegra.ph/file/6c15ac238c884c086ac12.jpg"
+HACKFREAKS_IMG = "https://telegra.ph/file/9c1eed4265027ca8ea63b.jpg"
 
 DONATE_STRING = """[Hope You are Satisfied with Me. As of now I don't need any Donations
 Since I am Hosted in Heroku with a Cheap Database add-on. If I need Some After Growing and Upgrading to a Faster and Advanced Hosting,
