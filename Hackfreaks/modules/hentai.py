@@ -308,10 +308,7 @@ def kuni(update, context):
 
 
 __help__ = """
-ðŸ”ž
-*Hentai Supplier* for your Private Groups, powerd by [É´á´‡á´‹á´s á´€á´˜Éª](https://nekos.life/) I can supply you loads of anime wallpapers and hentai images for free!
-If you want Hentai Supplier in your Private Group, ask [Here](https://t.me/TheHeadHunterZ) or [Here](https://t.me/HackfreaksSupport) for approval of your group.
-*â€¢ Commands to get photos:*
+*EVA Supplier* for your Private Groups, powerd by [É´á´‡á´‹á´s á´€á´˜Éª](https://nekos.life/) I can supply you loads of anime wallpapers and hentai images for free!*
 - /pussy
 - /feet
 - /yuri
@@ -355,7 +352,7 @@ If you want Hentai Supplier in your Private Group, ask [Here](https://t.me/TheHe
 """
 
 
-__mod_name__ = "Hentai"
+__mod_name__ = "Eva"
 
 
 ADDHENTAI_HANDLER = CommandHandler("addhentai", addhentai, pass_args=True, filters=CustomFilters.sudo_filter)
